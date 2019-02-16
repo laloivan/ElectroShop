@@ -36,7 +36,8 @@
 
     </head>
 	<body>
-koko
+
+
 <?php include("navegacion.php");?>
 		<!-- SECTION -->
 		<div class="section">
@@ -122,150 +123,66 @@ koko
 								<!-- tab -->
 								<div id="tab1" class="tab-pane active">
 									<div class="products-slick" data-nav="#slick-nav-1">
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/product01.png" alt="">
-												<div class="product-label">
-													<span class="sale">-30%</span>
-													<span class="new">Nuevo</span>
-												</div>
-											</div>
-											<div class="product-body">
-												<p class="product-category">Apple</p>
-												<h3 class="product-name"><a href="#">iPhone XR 64G Negro</a></h3>
-												<h4 class="product-price"> $14,510 <del class="product-old-price"> $20,729 </del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-												<div class="product-btns">
-													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
-												</div>
-											</div>
-											<div class="add-to-cart">
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
-											</div>
-										</div>
-										<!-- /product -->
+												
+<?php
+$db_servername="localhost";
+$db_username="root";
+$db_password="";
+$db_name="electromaster";
+$db_table_name="smartphone";
 
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/product02.png" alt="">
-												<div class="product-label">
-													<span class="new">NEW</span>
-												</div>
-											</div>
-											<div class="product-body">
-												<p class="product-category">Samsung</p>
-												<h3 class="product-name"><a href="#">Galaxy A9 Azul</a></h3>
-												<h4 class="product-price"> $12,999.00 <del class="product-old-price"> $13,659.00 </del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star-o"></i>
-												</div>
-												<div class="product-btns">
-													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
-												</div>
-											</div>
-											<div class="add-to-cart">
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
-											</div>
-										</div>
-										<!-- /product -->
+$db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_name);
+if (!$db_connection) 
+{
+	die('No conectado :v');
+}
 
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/product03.png" alt="">
-												<div class="product-label">
-													<span class="sale">-30%</span>
-												</div>
-											</div>
-											<div class="product-body">
-												<p class="product-category">Huawei</p>
-												<h3 class="product-name"><a href="#">Mate 20 Lite Azul</a></h3>
-												<h4 class="product-price"> $5,039.00 <del class="product-old-price"> $7,199 </del></h4>
-												<div class="product-rating">
-												</div>
-												<div class="product-btns">
-													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
-												</div>
-											</div>
-											<div class="add-to-cart">
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
-											</div>
-										</div>
-										<!-- /product -->
+	$existe = "select * from ".$db_table_name;
+	$resultado=$db_connection->query($existe);
 
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/product04.png" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">LG</p>
-												<h3 class="product-name"><a href="#">QStylus Alpha Azul</a></h3>
-												<h4 class="product-price">$5,769.00 <del class="product-old-price">$6,999.00</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-												<div class="product-btns">
-													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
-												</div>
-											</div>
-											<div class="add-to-cart">
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
-											</div>
-										</div>
-										<!-- /product -->
+	if ($resultado->num_rows > 0) {
+		// output data of each row
+		while($row = $resultado->fetch_assoc())
+		{?> 										<!-- product -->
+			<div class="product">
+				<div class="product-img">
+					<img src='./img/<?php echo "".$row["imagenid"]."" ?>' alt="">
+					<div class="product-label">
+						<span class="new">Nuevo</span>
+					</div>
+				</div>
+				<div class="product-body">
+					<p class="product-category"><?php echo " ".$row["marca"]." " ?></p>
+					<h3 class="product-name"><a href="#"><?php echo " ".$row["nombre"]." " ?></a></h3>
+					<h4 class="product-price"> $<?php echo " ".$row["descuento"]." " ?> <del class="product-old-price"> $<?php echo " ".$row["precio"]." " ?> </del></h4>
+					<div class="product-rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<div class="product-btns">
+						<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
+						<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
+						<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
+					</div>
+				</div>
+				<div class="add-to-cart">
+					<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
+				</div>
+			</div>
+			<!-- /product --> <?php
+			//echo "smartphoneid: " . $row["smartphoneid"]. " - nombre: " . $row["nombre"]. " - marca" . $row["marca"]. " - precio" . $row["precio"]. " - imagenid" . $row["imagenid"]. " - descuento" . $row["descuento"];
+		}
+	}
+	else 
+	{
+		echo "0 results";
+	}
 
-										<!-- product -->
-										<div class="product">
-											<div class="product-img">
-												<img src="./img/product05.png" alt="">
-											</div>
-											<div class="product-body">
-												<p class="product-category">Alcatel</p>
-												<h3 class="product-name"><a href="#">3C Rosa</a></h3>
-												<h4 class="product-price">$2,699.00 <del class="product-old-price">$2,999.00</del></h4>
-												<div class="product-rating">
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-													<i class="fa fa-star"></i>
-												</div>
-												<div class="product-btns">
-													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-													<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
-												</div>
-											</div>
-											<div class="add-to-cart">
-												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
-											</div>
-										</div>
-										<!-- /product -->
+$db_connection->close();
+?>
 									</div>
 									<div id="slick-nav-1" class="products-slick-nav"></div>
 								</div>
