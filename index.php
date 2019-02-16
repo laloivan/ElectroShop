@@ -36,7 +36,7 @@
 
     </head>
 	<body>
-ko
+koko
 <?php include("navegacion.php");?>
 		<!-- SECTION -->
 		<div class="section">
