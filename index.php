@@ -36,9 +36,8 @@
 
     </head>
 	<body>
-
+ko
 <?php include("navegacion.php");?>
-
 		<!-- SECTION -->
 		<div class="section">
 			<!-- container -->
