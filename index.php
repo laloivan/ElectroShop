@@ -27,13 +27,6 @@
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
     </head>
 	<body>
 
@@ -142,7 +135,7 @@ if (!$db_connection)
 
 	if ($resultado->num_rows > 0) 
 	{
-		// output data of each row
+		// pintando datos en html
 		while($row = $resultado->fetch_assoc())
 		{?>
 			<div class="product">
@@ -173,8 +166,7 @@ if (!$db_connection)
 					<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
 				</div>
 			</div>
-			<!-- /product --> <?php
-			//echo "smartphoneid: " . $row["smartphoneid"]. " - nombre: " . $row["nombre"]. " - marca" . $row["marca"]. " - precio" . $row["precio"]. " - imagenid" . $row["imagenid"]. " - descuento" . $row["descuento"];
+			<?php
 		}
 	}
 	else 

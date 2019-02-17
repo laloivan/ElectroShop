@@ -1,5 +1,16 @@
 <!-- HEADER -->
 <header>
+
+<script type="text/javascript">
+		function buscar() {
+      
+			var categoria = document.getElementById('cat').value;
+			var valor =  document.getElementById('val').value
+      //alert("c:" + categoria + " v:" + valor);
+      location.replace("http://127.0.0.1/xdxd/ElectroShop/index.php?cat="+categoria+ "&val="+valor)
+}
+</script>
+
   <!-- TOP HEADER -->
   <div id="top-header">
     <div class="container">
@@ -32,17 +43,80 @@
         </div>
         <!-- /LOGO -->
 
+<?php
+$db_servername="localhost";
+$db_username="root";
+$db_password="";
+$db_name="electromaster";
+$db_table_name="smartphone";
+
+$catego = "";
+$busc = "";
+
+if (isset($_GET['cat'])) {
+  $catego = null;
+}
+
+if (isset($_GET['val'])) {
+  $busc = null;
+}
+
+//$catego = isset($_GET['cat']) ? $_GET['cat'] : '';
+//$busc = isset($_GET['val']) ? $_GET['val'] : '';
+
+echo("Categoria: ".$catego." Texto: ".$busc);
+
+$db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_name);
+
+if (!$db_connection)
+{
+  die('No conectado a la base de datos');
+}
+
+  if (empty($busqueda))
+  {
+    $texto = 'Búsqueda sin resultados';
+  }
+  else
+  {
+    //Generando consultas para buscar similares.
+
+
+    //$sql = "SELECT * FROM smartphone WHERE nombre LIKE '%".$busqueda."%' AND tipopago = ".$tipopagoint;
+    //$resultado=$db_connection->query($sql); //Ejecutando consulta
+
+    //if (mysqli_num_rows($resultado) > 0) //Se valida que la consulta retorne valores
+    //{
+//      while($row = $resultado->fetch_assoc())
+      //{
+        //echo "".$row["nombre"]."";
+        ?>
+        <?php
+      //}
+    //}
+    //else
+    //{
+      //$texto = "No se encontraron resultados";
+    //}
+    mysql_close($conexion);
+  }
+
+
+
+
+  ?>
+
         <!-- SEARCH BAR -->
         <div class="col-md-6">
           <div class="header-search">
             <form>
-              <select class="input-select">
+              <select id="cat" class="input-select" type="text">
                 <option value="0">Categorías</option>
                 <option value="1">Credito</option>
-                <option value="1">Contado</option>
+                <option value="2">Contado</option>
               </select>
-              <input class="input" placeholder="¿Qué desea buscar?">
-              <button class="search-btn">Buscar</button>
+              <input id="val" class="input" type="text" placeholder="¿Qué desea buscar?">
+              <button class="search-btn" OnClick="buscar()" >Buscar</button>
             </form>
           </div>
         </div>
