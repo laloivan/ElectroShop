@@ -33,21 +33,24 @@
  		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
  		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
  		<![endif]-->
-
-		<script type="text/javascript">
-		function login() {
+ 		<script type="text/javascript">
+		function login()
+		{
 			//var usuario = document.getElementById('textbox_id').value;
 			var pass =  document.getElementById('pass').value
-			if(pass = '1234567'){
+			if(pass = '1234567')
+			{
 				location.replace("http://localhost/electro-master/")
-			}else {
+			}
+			else
+			{
 				$( "#al" ).show( "slow" );
 			}
-}
-
-function oculta() {
-	$( "#al" ).hide( "fast" );
-}
+		}
+		function oculta()
+		{
+			$( "#al" ).hide( "fast" );
+		}
 		</script>
 
     </head>
