@@ -134,16 +134,17 @@ $db_table_name="smartphone";
 $db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_name);
 if (!$db_connection) 
 {
-	die('No conectado :v');
+	die('No conectado');
 }
 
 	$existe = "select * from ".$db_table_name;
 	$resultado=$db_connection->query($existe);
 
-	if ($resultado->num_rows > 0) {
+	if ($resultado->num_rows > 0) 
+	{
 		// output data of each row
 		while($row = $resultado->fetch_assoc())
-		{?> 										<!-- product -->
+		{?>
 			<div class="product">
 				<div class="product-img">
 					<img src='./img/<?php echo "".$row["imagenid"]."" ?>' alt="">
@@ -178,7 +179,7 @@ if (!$db_connection)
 	}
 	else 
 	{
-		echo "0 results";
+		echo "No se cuenta con artículos para su venta";
 	}
 
 $db_connection->close();
