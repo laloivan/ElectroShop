@@ -1,16 +1,14 @@
 <!-- HEADER -->
 <header>
-
 <script type="text/javascript">
-		function buscar() {
-      
-			var categoria = document.getElementById('cat').value;
-			var valor =  document.getElementById('val').value
+		function buscar()
+    {
+      var categoria = document.getElementById('cat').value;
+      var valor =  document.getElementById('val').value
       //alert("c:" + categoria + " v:" + valor);
-      location.replace("http://127.0.0.1/xdxd/ElectroShop/index.php?cat="+categoria+ "&val="+valor)
-}
+      location.replace("http://localhost/xdxd/ElectroShop/index.php?cat="+categoria+ "&val="+valor)
+    }
 </script>
-
   <!-- TOP HEADER -->
   <div id="top-header">
     <div class="container">
@@ -50,21 +48,10 @@ $db_password="";
 $db_name="electromaster";
 $db_table_name="smartphone";
 
-$catego = "";
-$busc = "";
+//$catego = $_GET['cat'];
+//$busc = $_GET['val'];
 
-if (isset($_GET['cat'])) {
-  $catego = null;
-}
-
-if (isset($_GET['val'])) {
-  $busc = null;
-}
-
-//$catego = isset($_GET['cat']) ? $_GET['cat'] : '';
-//$busc = isset($_GET['val']) ? $_GET['val'] : '';
-
-echo("Categoria: ".$catego." Texto: ".$busc);
+//echo("Categoria: ".$catego." Texto: ".$busc);
 
 $db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_name);
 
