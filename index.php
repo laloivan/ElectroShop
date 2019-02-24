@@ -268,10 +268,10 @@
 							<h3 class="title">Productos a contado</h3>
 							<div class="section-nav">
 								<ul class="section-tab-nav tab-nav">
-									<li class="active"><a data-toggle="tab" href="#tab2">Smartphones</a></li>
-									<!--<li><a data-toggle="tab" href="#tab2">Smartphones</a></li>
-									<li><a data-toggle="tab" href="#tab2">Cameras</a></li>
-									<li><a data-toggle="tab" href="#tab2">Accessories</a></li>-->
+									<li class="active"><a data-toggle="tab" href="#tab1">Apple</a></li>
+									<li><a data-toggle="tab" href="#tab1">Samsung</a></li>
+									<li><a data-toggle="tab" href="#tab1">Motorola</a></li>
+									<li><a data-toggle="tab" href="#tab1">Huawei</a></li>
 								</ul>
 							</div>
 						</div>

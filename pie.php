@@ -13,7 +13,7 @@
 							</form>
 							<ul class="newsletter-follow">
 								<li>
-									<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+									<a href="https://www.facebook.com/TDC-Digital-Movil-331797651011567/"><i class="fa fa-facebook"></i></a>
 								</li>
 								<li>
 									<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
@@ -44,26 +44,17 @@
 					<div class="row">
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Acerda de</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
-								</ul>
+								<h3 class="footer-title"> Acerda de </h3>
+								<p>
+									TCDigital es Distribuidor Mayorista de teléfonos celulares y accesorios para celulares. Contamos con varios años de experiencia en el mercado. Nuestra compañía está integrada por profesionales en sistemas, telecomunicaciones y de soporte técnico, con más de 5000 clientes satisfechos en todo México.
+								</p>
 							</div>
 						</div>
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Categorías</h3>
-								<ul class="footer-links">
-									<li><a href="#">Hot deals</a></li>
-									<li><a href="#">Laptops</a></li>
-									<li><a href="#">Smartphones</a></li>
-									<li><a href="#">Cameras</a></li>
-									<li><a href="#">Accessories</a></li>
-								</ul>
+								<h3 class="footer-title"> Mision </h3>
+								<p>Desarrollar y comercializar telefonía celular y sus accesorios para el mercado nacional e internacional, mediante la aplicación de la más alta tecnología en todos nuestros productos, siempre otorgando un servicio y soporte de la más alta calidad a todos nuestros clientes.</p>
 							</div>
 						</div>
 
@@ -71,27 +62,19 @@
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Informacíon</h3>
-								<ul class="footer-links">
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li><a href="#">Privacy Policy</a></li>
-									<li><a href="#">Orders and Returns</a></li>
-									<li><a href="#">Terms & Conditions</a></li>
-								</ul>
+								<h3 class="footer-title"> Vision </h3>
+								<p>
+									Ser una empresa líder con na sólida estructura organizacional que proporcione bienestar a sus empleados, clientes y proveedores. Consolidar el liderazgo nacional e internacional de nuestra empresa, sosteniendo un crecimiento y mejora integral en nuestra organización proyectando confianza en nuestro trabajo.
+								</p>
 							</div>
 						</div>
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Servicios</h3>
-								<ul class="footer-links">
-									<li><a href="#">My Account</a></li>
-									<li><a href="#">View Cart</a></li>
-									<li><a href="#">Wishlist</a></li>
-									<li><a href="#">Track My Order</a></li>
-									<li><a href="#">Help</a></li>
-								</ul>
+								<h3 class="footer-title"> Valores </h3>
+								<p>
+									Todo el personal que labora en TCDigital se guía por los siguientes principios, esenciales en todas sus actividades. Respeto, Integridad, Responsabilidad, Servicio y Trabajo en equipo.
+								</p>
 							</div>
 						</div>
 					</div>

@@ -47,7 +47,7 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li><a href="">Principal</a></li>
+						<li><a href="index.php">Principal</a></li>
 						<li class="active"><a href="">Productos</a></li>
 						<li><a href="#">Ventas</a></li>
 						<li><a href="#">Compras</a></li>

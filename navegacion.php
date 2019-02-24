@@ -35,7 +35,7 @@
         <!-- LOGO -->
         <div class="col-md-3">
           <div class="header-logo">
-            <a href="#" class="logo">
+            <a href="index.php" class="logo">
               <img src="./img/LogoTCDigital.jpg" alt="">
             </a>
           </div>
