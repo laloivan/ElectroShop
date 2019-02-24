@@ -6,7 +6,7 @@
       var categoria = document.getElementById('cat').value;
       var valor =  document.getElementById('val').value
       //alert("c:" + categoria + " v:" + valor);
-      location.replace("http://localhost/xdxd/ElectroShop/index.php?cat="+categoria+ "&val="+valor)
+      location.replace("http://127.0.0.1/xdxd/ElectroShop/index.php?cat="+categoria+ "&val="+valor)
     }
 </script>
   <!-- TOP HEADER -->
@@ -17,14 +17,15 @@
         <li><a href="#"><i class="fa fa-envelope-o"></i> ruscanga@tcdigital.com</a></li>
         <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
       </ul>
-      <ul class="header-links pull-right">
-        <li><a href="#"><i class="fa fa-dollar"></i> MXN</a></li>
-        <li><a href="#"><i class="fa fa-user-o"></i> Mi cuenta</a></li>
+      <!-- Comentado por pruebas -->
+      <ul class="header-links pull-right"-->
+        <!--li><a href="#"><i class="fa fa-dollar"></i> MXN</a></li-->
+        <li><a href="login.php"><i class="fa fa-user-o"></i> login </a></li>
       </ul>
     </div>
   </div>
   <!-- /TOP HEADER -->
-
+  
   <!-- MAIN HEADER -->
   <div id="header">
     <!-- container -->
@@ -48,49 +49,14 @@ $db_password="";
 $db_name="electromaster";
 $db_table_name="smartphone";
 
-//$catego = $_GET['cat'];
-//$busc = $_GET['val'];
-
-//echo("Categoria: ".$catego." Texto: ".$busc);
-
 $db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_name);
-
-if (!$db_connection)
-{
-  die('No conectado a la base de datos');
-}
-
-  if (empty($busqueda))
+  
+  if (!$db_connection)
   {
-    $texto = 'Búsqueda sin resultados';
+    die('No conectado a la base de datos');
   }
-  else
-  {
-    //Generando consultas para buscar similares.
-
-
-    //$sql = "SELECT * FROM smartphone WHERE nombre LIKE '%".$busqueda."%' AND tipopago = ".$tipopagoint;
-    //$resultado=$db_connection->query($sql); //Ejecutando consulta
-
-    //if (mysqli_num_rows($resultado) > 0) //Se valida que la consulta retorne valores
-    //{
-//      while($row = $resultado->fetch_assoc())
-      //{
-        //echo "".$row["nombre"]."";
-        ?>
-        <?php
-      //}
-    //}
-    //else
-    //{
-      //$texto = "No se encontraron resultados";
-    //}
-    mysql_close($conexion);
-  }
-
-
-
-
+  $sql_user =  "SELECT * FROM usuario";
+  $resultado=$db_connection->query($sql_user);
   ?>
 
         <!-- SEARCH BAR -->
@@ -184,27 +150,3 @@ if (!$db_connection)
   <!-- /MAIN HEADER -->
 </header>
 <!-- /HEADER -->
-
-<!-- NAVIGATION -->
-<nav id="navigation">
-  <!-- container -->
-  <div class="container">
-    <!-- responsive-nav -->
-    <div id="responsive-nav">
-      <!-- NAV -->
-      <ul class="main-nav nav navbar-nav">
-        <li class="active"><a href="#">Principal</a></li>
-        <li><a href="#">Ofertones</a></li>
-        <li><a href="#">Categorias</a></li>
-        <li><a href="#">Laptops</a></li>
-        <li><a href="#">Smartphones</a></li>
-        <li><a href="#">Camaras</a></li>
-        <li><a href="#">Accessorios</a></li>
-      </ul>
-      <!-- /NAV -->
-    </div>
-    <!-- /responsive-nav -->
-  </div>
-  <!-- /container -->
-</nav>
-<!-- /NAVIGATION -->
