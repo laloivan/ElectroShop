@@ -196,12 +196,6 @@
 								<?php
 							}?>
 						</div>
-						<!-- Comentado porque no se utiliza -->
-						<!--div class="product-btns">
-							<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-							<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-							<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
-						</div-->
 					</div>
 					<div class="add-to-cart" href="detalle.php">
 						<!-- style="display: none" -->
@@ -339,13 +333,15 @@
 																		$estado = "Usado";
 																	}
 																?>
-							<span class="new"><?php echo "$estado"; ?></span>
+																<span class="new"><?php echo "$estado"; ?></span>
 															</div>
 														</div>
 														<div class="product-body">
 															<p class="product-category"><?php echo " ".$row["marca"]." " ?></p>
 															<h3 class="product-name"><a href="#"><?php echo " ".$row["nombre"]." " ?></a></h3>
-															<h4 class="product-price"> $<?php echo " ".$row["descuento"]." " ?> <del class="product-old-price"> $<?php echo " ".$row["precio"]." " ?> </del></h4>
+															<h4 class="product-price"> $<?php echo " ".$row["descuento"]." " ?>
+																<del class="product-old-price"> $<?php echo " ".$row["precio"]." " ?> </del>
+															</h4>
 
 															<div class="product-rating">
 																<?php
@@ -368,16 +364,16 @@
 																<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
 															</div-->
 														</div>
-														<div class="add-to-cart">
-															<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Ver detalles</button>
+														<div class="add-to-cart" href="detalle.php">
+															<input type="text" name = numero style="display: none" value="<?php echo " ".$row["smartphoneid"]." " ?>">
+															<button class="add-to-cart-btn" type="submit"><i class="fa fa-shopping-cart"></i>Ver detalle</button>
 														</div>
 												</form>
 											</div>
 											<?php											}
 										}
 										?>
-										<!-- /product -->
-
+									<!-- /product -->
 									</div>
 									<div id="slick-nav-2" class="products-slick-nav"></div>
 								</div>

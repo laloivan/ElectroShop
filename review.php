@@ -18,21 +18,21 @@ if ($db_connection)
 	$Opinion = $_POST['opinion'];
 	//$Calificacion = $_POST['calificacion'];
 	$Calificacion = "";
-	$FechaRegistro = date("Y-m-d H:i:s");
-	echo "$FechaRegistro";
+	$Fecha = date("Y-m-d H:i:s");
 
 	//Obteniendo consecutivo
-	$sql_ReviewID = "SELECT * FROM $db_table_name";
-	$dataReview=$db_connection->query($sql_ReviewID);	
-	$ReviewID = $dataReview->num_rows + 1;
+	$sql_ReviewID = "SELECT * FROM $db_table_name ORDER BY ReviewID DESC LIMIT 1";
+	$dataReview=$db_connection->query($sql_ReviewID);
+	
+	$row = $dataReview->fetch_assoc();
+	$ReviewID = $row['ReviewID'] + 1;
 
 	//Creando consulta inserción
-	$sql_review =  "INSERT INTO $db_table_name (ReviewID, SmartphoneID, Nombre, Email, Opinion, Calificacion) VALUES ('$ReviewID', '$SmartphoneID', '$Nombre', '$Email', '$Opinion', '$Calificacion')";
+	$sql_review =  "INSERT INTO $db_table_name (ReviewID, SmartphoneID, Nombre, Email, Opinion, Calificacion, Fecha) VALUES ('$ReviewID', '$SmartphoneID', '$Nombre', '$Email', '$Opinion', '$Calificacion', '$Fecha')";
 	$dataReview=$db_connection->query($sql_review);
 
-	//window.location.replace("detalle.php");
-	//$ruta="detalle.php?numero=?".$SmartphoneID;
-	//echo "<script>location.href='index.php';</script>";
+	//Redireccionando a principal
+	echo "<script>location.href='index.php';</script>";
 
 	//Cerrando conexión
 	$db_connection->close();
