@@ -56,7 +56,7 @@ $db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_
     die('No conectado a la base de datos');
   }
   $sql_user =  "SELECT * FROM usuario";
-  $resultado=$db_connection->query($sql_user);
+  $dataUser=$db_connection->query($sql_user);
   ?>
 
         <!-- SEARCH BAR -->

@@ -1,0 +1,7 @@
+- Sucursal en maps
+- Redes sociales
+- Productos en liquidación/Oferta/Remate.
+(Listo) - Quitar carrito
+(Listo) - Aserca de la empresa (visión, misión, quienes somos, etc.)
+- Páginas: Principal, Productos, subir para vender, detalle del producto.
+- Filtrar por marca para los tabs de los productos en   principal.

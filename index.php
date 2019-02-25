@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>TCDigital</title>
+		<title>TCDigital - principal</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -29,6 +29,7 @@
 
     </head>
 	<body>
+
 		<?php include("navegacion.php");?>
 
 		<!-- NAVIGATION -->
@@ -42,7 +43,7 @@
 						<li class="active"><a href="">Principal</a></li>
 						<li><a href="productos.php">Productos</a></li>
 						<li><a href="#">Ventas</a></li>
-						<li><a href="#">Compras</a></li>
+						<!--li><a href="#">Compras</a></li-->
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -159,32 +160,55 @@
 		while($row = $credito->fetch_assoc())
 		{?>
 			<div class="product">
-				<div class="product-img">
-					<img src='./img/<?php echo "".$row["imagenid"]."" ?>' alt="">
-					<div class="product-label">
-						<span class="new">Nuevo</span>
+				<form method="POST" action="detalle.php">
+					<div class="product-img">
+						<img src='./img/<?php echo "".$row["imagenid"]."" ?>' alt="">
+						<div class="product-label">
+							<?php
+								if ($row["estado"] == 1)
+								{
+									$estado = "Nuevo";
+								}
+								if ($row["estado"] == 2)
+								{
+									$estado = "Usado";
+								}
+							?>
+							<span class="new"><?php echo "$estado"; ?></span>
+						</div>
 					</div>
-				</div>
-				<div class="product-body">
-					<p class="product-category"><?php echo " ".$row["marca"]." " ?></p>
-					<h3 class="product-name"><a href="#"><?php echo " ".$row["nombre"]." " ?></a></h3>
-					<h4 class="product-price"> $<?php echo " ".$row["descuento"]." " ?> <del class="product-old-price"> $<?php echo " ".$row["precio"]." " ?> </del></h4>
-					<div class="product-rating">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star-o"></i>
+					<div class="product-body">
+						<p class="product-category"><?php echo " ".$row["marca"]." " ?></p>
+						<h3 class="product-name"><a href="#"><?php echo " ".$row["nombre"]." " ?></a></h3>
+						<h4 class="product-price"> $<?php echo " ".$row["descuento"]." " ?> <del class="product-old-price"> $<?php echo " ".$row["precio"]." " ?> </del></h4>
+						<div class="product-rating">
+							<?php
+							for ($x = 0; $x < $row["stars"]; $x++)
+							{?>
+								<i class="fa fa-star"></i>
+								<?php
+							}
+
+							$starsBlancas = 5 - $x;
+							for ($i=0; $i < $starsBlancas; $i++)
+								{ ?>
+									<i class="fa fa-star-o"></i>
+								<?php
+							}?>
+						</div>
+						<!-- Comentado porque no se utiliza -->
+						<!--div class="product-btns">
+							<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
+							<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
+							<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
+						</div-->
 					</div>
-					<div class="product-btns">
-						<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-						<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-						<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
+					<div class="add-to-cart" href="detalle.php">
+						<!-- style="display: none" -->
+						<input type="text" name = numero style="display: none" value="<?php echo " ".$row["smartphoneid"]." " ?>">
+						<button class="add-to-cart-btn" type="submit"><i class="fa fa-shopping-cart"></i>Ver detalle</button>
 					</div>
-				</div>
-				<div class="add-to-cart">
-					<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
-				</div>
+				</form>
 			</div>
 			<?php
 		}
@@ -193,7 +217,6 @@
 	{
 		echo "No se cuenta con artículos para su venta";
 	}
-	$db_connection->close();
 ?>
 									</div>
 									<div id="slick-nav-1" class="products-slick-nav"></div>
@@ -287,13 +310,6 @@
 									<div class="products-slick" data-nav="#slick-nav-2">
 									<!-- product -->
 										<?php
-										$db_servername="localhost";
-										$db_username="root";
-										$db_password="";
-										$db_name="electromaster";
-										$db_table_name="smartphone";
-										
-										$db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_name);
 										if (!$db_connection) 
 										{
 											die('No conectado');
@@ -307,36 +323,58 @@
 											{
 												?>
 												<div class="product">
-												<div class="product-img">
-													<img src='./img/<?php echo "".$row["imagenid"]."" ?>' alt="">
-													<div class="product-label">
-														<span class="new">Nuevo</span>
-													</div>
-												</div>
-												<div class="product-body">
-													<p class="product-category"><?php echo " ".$row["marca"]." " ?></p>
-													<h3 class="product-name"><a href="#"><?php echo " ".$row["nombre"]." " ?></a></h3>
-													<h4 class="product-price"> $<?php echo " ".$row["descuento"]." " ?> <del class="product-old-price"> $<?php echo " ".$row["precio"]." " ?> </del></h4>
-													<div class="product-rating">
-														<i class="fa fa-star"></i>
-														<i class="fa fa-star"></i>
-														<i class="fa fa-star"></i>
-														<i class="fa fa-star"></i>
-														<i class="fa fa-star-o"></i>
-													</div>
-													<div class="product-btns">
-														<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-														<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-														<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
-													</div>
-												</div>
-												<div class="add-to-cart">
-													<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
-												</div>
+													<form method="POST" action="detalle.php">
+														<div class="product-img">
+															<img src='./img/<?php echo "".$row["imagenid"]."" ?>' alt="">
+															<div class="product-label">
+																<!-- Comentado -->
+																<!--span class="new">Nuevo</span-->
+																<?php
+																	if ($row["estado"] == 1)
+																	{
+																		$estado = "Nuevo";
+																	}
+																	if ($row["estado"] == 2)
+																	{
+																		$estado = "Usado";
+																	}
+																?>
+							<span class="new"><?php echo "$estado"; ?></span>
+															</div>
+														</div>
+														<div class="product-body">
+															<p class="product-category"><?php echo " ".$row["marca"]." " ?></p>
+															<h3 class="product-name"><a href="#"><?php echo " ".$row["nombre"]." " ?></a></h3>
+															<h4 class="product-price"> $<?php echo " ".$row["descuento"]." " ?> <del class="product-old-price"> $<?php echo " ".$row["precio"]." " ?> </del></h4>
+
+															<div class="product-rating">
+																<?php
+																for ($y = 0; $y < $row["stars"]; $y++)
+																	{?>
+																		<i class="fa fa-star"></i>
+																		<?php
+																	}
+																$starsBlancasY = 5 - $y;
+																for ($l=0; $l < $starsBlancasY; $l++)
+																	{ ?>
+																		<i class="fa fa-star-o"></i>
+																		<?php
+																	}?>
+															</div>
+															<!-- Comentado porque no se utiliza -->
+															<!--div class="product-btns">
+																<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
+																<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
+																<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
+															</div-->
+														</div>
+														<div class="add-to-cart">
+															<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Ver detalles</button>
+														</div>
+												</form>
 											</div>
 											<?php											}
 										}
-										$db_connection->close();
 										?>
 										<!-- /product -->
 
