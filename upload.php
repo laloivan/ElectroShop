@@ -1,6 +1,7 @@
 <?php
 $target_dir = "img/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$nombreimagen = basename( $_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
@@ -43,8 +44,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "INSERT INTO smartphone (nombre, marca, precio, imagenid, descuento, tipopago, stock, stars, estado, descripcion, resumen, caracteristicas)
-VALUES ('John', 'Doe', 'john@example.com')";
+$sql = "INSERT INTO smartphone (nombre,marca, precio, imagenid, descuento, tipopago, stock, stars, estado, descripcion, resumen, caracteristicas)
+VALUES ('mate', 'huaei', '100','$nombreimagen','10','1','1','1','1','descripcion','resumen','caracteristicas')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
