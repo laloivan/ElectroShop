@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-02-2019 a las 01:52:41
+-- Tiempo de generación: 26-02-2019 a las 07:03:40
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.0
 
@@ -43,8 +43,10 @@ CREATE TABLE `review` (
 --
 
 INSERT INTO `review` (`ReviewID`, `SmartphoneID`, `Nombre`, `Email`, `Opinion`, `Calificacion`, `Fecha`) VALUES
-(1, 1, 'Rair', 'rair.nitron@gmail.com', ':v', 0, '0000-00-00'),
-(2, 1, 'Rair', 'rair.nitron@gmail.com', ':v', 0, '0000-00-00');
+(1, 1, 'Rair Santos', 'rair.nitron@gmail.com', 'Buen telefono, el mejor que he encontrado.', 0, '2019-02-25'),
+(2, 1, 'Randy Santos', 'randy_chaco@hotmail.com', 'Buen producto.', 0, '2019-02-25'),
+(3, 1, 'Rodrigo Uscanga', 'ruscanga@tcdigital.com', 'Buen producto, no puedo verle ningun defecto.', 0, '2019-02-25'),
+(4, 1, 'John', 'jmorales@gmail.com', 'Buen producto, cumple con la mayoria de los requisitos de muchos usuarios.', 0, '2019-02-25');
 
 -- --------------------------------------------------------
 
@@ -79,6 +81,26 @@ INSERT INTO `smartphone` (`smartphoneid`, `nombre`, `marca`, `precio`, `imagenid
 (4, 'QStylus Alpha Azul', 'LG', 6999, 'product04.png', 5769, 2, 25, 3, 1, '', '', ''),
 (5, '3C Rosa', 'Alcatel', 2999, 'product05.png', 2699, 2, 7, 2, 2, '', '', ''),
 (6, 'Galaxy S9', 'Samsung', 11499, 'product06.png', 10500, 2, 21, 5, 1, '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `suscribirse`
+--
+
+CREATE TABLE `suscribirse` (
+  `suscribirseid` int(10) NOT NULL,
+  `email` varchar(254) NOT NULL,
+  `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `suscribirse`
+--
+
+INSERT INTO `suscribirse` (`suscribirseid`, `email`, `fecha`) VALUES
+(1, 'rair.nitron@gmail.com', '2019-02-26'),
+(2, 'ruscanga@tcdigital.com', '2019-02-26');
 
 -- --------------------------------------------------------
 
@@ -134,6 +156,12 @@ ALTER TABLE `review`
 --
 ALTER TABLE `smartphone`
   ADD PRIMARY KEY (`smartphoneid`);
+
+--
+-- Indices de la tabla `suscribirse`
+--
+ALTER TABLE `suscribirse`
+  ADD PRIMARY KEY (`suscribirseid`);
 
 --
 -- Indices de la tabla `usuario`

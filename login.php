@@ -67,10 +67,9 @@
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
 						<li><a href="index.php">Principal</a></li>
-						<li><a href="#">Productos</a></li>
+						<li><a href="productos.php">Productos</a></li>
 						<li><a href="#">Ventas</a></li>
-						<li><a href="#">Compras :v</a></li>
-						<li class="active"><a href="login.php">loggin</a></li>
+						<li class="active"><a href="login.php">login</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>

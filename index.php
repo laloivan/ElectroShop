@@ -119,12 +119,12 @@
 						<div class="section-title">
 							<h3 class="title">Productos a credito</h3>
 							<div class="section-nav">
-								<ul class="section-tab-nav tab-nav">
+								<!--ul class="section-tab-nav tab-nav">
 									<li class="active"><a data-toggle="tab" href="#tab1">Apple</a></li>
 									<li><a data-toggle="tab" href="#tab1">Samsung</a></li>
 									<li><a data-toggle="tab" href="#tab1">Motorola</a></li>
 									<li><a data-toggle="tab" href="#tab1">Huawei</a></li>
-								</ul>
+								</ul-->
 							</div>
 						</div>
 					</div>
@@ -284,12 +284,12 @@
 						<div class="section-title">
 							<h3 class="title">Productos a contado</h3>
 							<div class="section-nav">
-								<ul class="section-tab-nav tab-nav">
+								<!--ul class="section-tab-nav tab-nav">
 									<li class="active"><a data-toggle="tab" href="#tab1">Apple</a></li>
 									<li><a data-toggle="tab" href="#tab1">Samsung</a></li>
 									<li><a data-toggle="tab" href="#tab1">Motorola</a></li>
 									<li><a data-toggle="tab" href="#tab1">Huawei</a></li>
-								</ul>
+								</ul-->
 							</div>
 						</div>
 					</div>
@@ -384,10 +384,8 @@
 		<!-- /SECTION -->
 
 		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
+		<!--div class="section">
 			<div class="container">
-				<!-- row -->
 				<div class="row">
 					<div class="col-md-4 col-xs-6">
 						<div class="section-title">
@@ -399,7 +397,6 @@
 
 						<div class="products-widget-slick" data-nav="#slick-nav-3">
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product07.png" alt="">
@@ -410,9 +407,6 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
-
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product08.png" alt="">
@@ -423,9 +417,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product09.png" alt="">
@@ -436,11 +428,9 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product01.png" alt="">
@@ -451,9 +441,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product02.png" alt="">
@@ -464,9 +452,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product03.png" alt="">
@@ -477,7 +463,6 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 						</div>
 					</div>
@@ -492,7 +477,6 @@
 
 						<div class="products-widget-slick" data-nav="#slick-nav-4">
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product04.png" alt="">
@@ -503,9 +487,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product05.png" alt="">
@@ -516,9 +498,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product06.png" alt="">
@@ -529,11 +509,9 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product07.png" alt="">
@@ -544,9 +522,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product08.png" alt="">
@@ -557,9 +533,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product09.png" alt="">
@@ -570,7 +544,6 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 						</div>
 					</div>
@@ -587,7 +560,6 @@
 
 						<div class="products-widget-slick" data-nav="#slick-nav-5">
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product01.png" alt="">
@@ -598,9 +570,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product02.png" alt="">
@@ -611,9 +581,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product03.png" alt="">
@@ -624,11 +592,10 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
+
 							</div>
 
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product04.png" alt="">
@@ -639,9 +606,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product05.png" alt="">
@@ -652,9 +617,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product06.png" alt="">
@@ -665,16 +628,12 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 						</div>
 					</div>
-
 				</div>
-				<!-- /row -->
 			</div>
-			<!-- /container -->
-		</div>
+		</div-->
 		<!-- /SECTION -->
 
 		<!-- Se incluye el pie de página. -->
