@@ -272,13 +272,13 @@
 													}
 													?>
 												</ul>
-												<ul class="reviews-pagination">
+												<!--ul class="reviews-pagination">
 													<li class="active">1</li>
 													<li><a href="#">2</a></li>
 													<li><a href="#">3</a></li>
 													<li><a href="#">4</a></li>
 													<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-												</ul>
+												</ul-->
 											</div>
 										</div>
 										<!-- /Reviews -->

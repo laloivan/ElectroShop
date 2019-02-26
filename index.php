@@ -238,32 +238,32 @@
 							<ul class="hot-deal-countdown">
 								<li>
 									<div>
-										<h3>02</h3>
-										<span>Days</span>
+										<h3>10</h3>
+										<span>Calidad</span>
 									</div>
 								</li>
 								<li>
 									<div>
 										<h3>10</h3>
-										<span>Hours</span>
+										<span>Atención</span>
 									</div>
 								</li>
 								<li>
 									<div>
-										<h3>34</h3>
-										<span>Mins</span>
+										<h3>10</h3>
+										<span>Confianza</span>
 									</div>
 								</li>
 								<li>
 									<div>
-										<h3>60</h3>
-										<span>Secs</span>
+										<h3>10</h3>
+										<span>Recomendar</span>
 									</div>
 								</li>
 							</ul>
-							<h2 class="text-uppercase">hot deal this week</h2>
-							<p>New Collection Up to 50% OFF</p>
-							<a class="primary-btn cta-btn" href="#">Shop now</a>
+							<h2 class="text-uppercase">Distribuidor mayorista</h2>
+							<p>Años de experiencia en el mercado</p>
+							<a class="primary-btn cta-btn" href="productos.php">Comprar</a>
 						</div>
 					</div>
 				</div>
@@ -357,12 +357,6 @@
 																		<?php
 																	}?>
 															</div>
-															<!-- Comentado porque no se utiliza -->
-															<!--div class="product-btns">
-																<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-																<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-																<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
-															</div-->
 														</div>
 														<div class="add-to-cart" href="detalle.php">
 															<input type="text" name = numero style="display: none" value="<?php echo " ".$row["smartphoneid"]." " ?>">

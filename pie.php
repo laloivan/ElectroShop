@@ -46,7 +46,7 @@
 							<div class="footer">
 								<h3 class="footer-title"> Acerda de </h3>
 								<p>
-									TCDigital es Distribuidor Mayorista de teléfonos celulares y accesorios para celulares. Contamos con varios años de experiencia en el mercado. Nuestra compañía está integrada por profesionales en sistemas, telecomunicaciones y de soporte técnico, con más de 5000 clientes satisfechos en todo México.
+									TCDigital es distribuidor mayorista de teléfonos celulares. Contamos con varios años de experiencia en el mercado. Nuestra compañía está integrada por profesionales en sistemas, telecomunicaciones y de soporte técnico, con más de 5000 clientes satisfechos en todo México.
 								</p>
 							</div>
 						</div>
