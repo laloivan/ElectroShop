@@ -42,7 +42,7 @@
 					<ul class="main-nav nav navbar-nav">
 						<li class="active"><a href="">Principal</a></li>
 						<li><a href="productos.php">Productos</a></li>
-						<li><a href="#">Ventas</a></li>
+						<li><a href="admin.php">Ventas</a></li>
 						<!--li><a href="#">Compras</a></li-->
 					</ul>
 					<!-- /NAV -->
@@ -66,8 +66,8 @@
 								<img src="./img/shop01.png" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Lo más<br>comprado</h3>
-								<a href="#" class="cta-btn">Comprar ahora <i class="fa fa-arrow-circle-right"></i></a>
+								<h3>LA MEJOR<br>TIENDA</h3>
+								<!--a href="#" class="cta-btn">Comprar ahora <i class="fa fa-arrow-circle-right"></i></a-->
 							</div>
 						</div>
 					</div>
@@ -80,8 +80,8 @@
 								<img src="./img/shop03.png" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Mejores<br>ofertas</h3>
-								<a href="#" class="cta-btn">Comprar ahora <i class="fa fa-arrow-circle-right"></i></a>
+								<h3>LAS MEJORES<br>OFERTAS</h3>
+								<!--a href="#" class="cta-btn">Comprar ahora <i class="fa fa-arrow-circle-right"></i></a-->
 							</div>
 						</div>
 					</div>
@@ -94,8 +94,8 @@
 								<img src="./img/shop02.png" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Productos en<br>liquidación</h3>
-								<a href="#" class="cta-btn">Comprar ahora <i class="fa fa-arrow-circle-right"></i></a>
+								<h3>LOS MEJORES<br>PRODUCTOS</h3>
+								<!--a href="#" class="cta-btn">Comprar ahora <i class="fa fa-arrow-circle-right"></i></a-->
 							</div>
 						</div>
 					</div>
@@ -358,7 +358,7 @@
 																	}?>
 															</div>
 														</div>
-														<div class="add-to-cart" href="detalle.php">
+														<div class="add-to-cart">
 															<input type="text" name = numero style="display: none" value="<?php echo " ".$row["smartphoneid"]." " ?>">
 															<button class="add-to-cart-btn" type="submit"><i class="fa fa-shopping-cart"></i>Ver detalle</button>
 														</div>

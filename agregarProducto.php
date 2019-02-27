@@ -67,10 +67,8 @@
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
 						<li><a href="index.php">Principal</a></li>
-						<li><a href="#">Productos</a></li>
-						<li><a href="#">Ventas</a></li>
-						<li><a href="#">Compras :v</a></li>
-						<li class="active"><a href="login.php">loggin</a></li>
+						<li><a href="productos.php">Productos</a></li>
+						<li class="active"><a href="agregarProducto.php">Ventas</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -87,71 +85,64 @@
 				<!-- row -->
 				<div class="row">
 					<div class="col-md-12">
-						<h3 class="breadcrumb-header">Regular Page</h3>
+						<h3 class="breadcrumb-header">Ventas</h3>
 						<ul class="breadcrumb-tree">
-							<li><a href="#">Home</a></li>
-							<li class="active">Blank</li>
+							<li><a href="#">Agregar</a></li>
+							<li class="active">Nuevo</li>
 						</ul>
 					</div>
 				</div>
 				<!-- /row -->
+				<div class="col-md-9" style="text-align: center;">
+					<div id="review-form" class="billing-details">
+						<div class="section-title">
+							<h3 class="title">Datos de producto</h3>
+						</div>
+						<form class="review-form" method="POST" action="upload.php" style="text-align: center;">
+							<input class="input" type="text" name="nombre" placeholder="Nombre">
+							<input class="input" type="text" name="marca" placeholder="Marca">
+							<input class="input" type="text" name="precio" placeholder="Precio">
+							<input class="input" type="text" name="descuento" placeholder="Descuento">
+							<input class="input" type="text" name="stock" placeholder="Stock">
+							<input class="input" type="text" name="stars" placeholder="Stars">
+							<textarea class="input" type="text" name="descripcion" placeholder="Descripcion"></textarea>
+							<input class="input" type="text" name="resumen" placeholder="Nombre">
+							<input class="input" type="file" name="fileToUpload" placeholder="Subir imagen" id="fileToUpload">
+							<button class="primary-btn" type="submit" name="submit" value="Agregar producto">Agregar producto</button>
+						</form>
+					</div>
+				</div>
 			</div>
 			<!-- /container -->
 		</div>
 		<!-- /BREADCRUMB -->
 
-		<!-- SECTION -->
-		<div class="section" style="text-aling:center; margin: 0 auto">
-			<!-- container -->
 
+		<!--div style="width:30%; margin: 0 auto">
 
-<!--div style="width:30%; margin: 0 auto">
-
-	<form action="upload.php" method="post" enctype="multipart/form-data">
-		Nombre:
-		<input type="text" name="nombre"><br>
-		Marca:
-		<input type="text" name="marca"><br>
-		Precio:
-		<input type="text" name="precio"><br>
-		Descuento:
-		<input type="text" name="descuento"><br>
-		Stock:
-		<input type="text" name="stock"><br>
-		Stars:
-		<input type="text" name="stars"><br>
-		Descripcion:
-		<input type="text" name="descripcion"><br>
-		Resumen:
-		<input type="text" name="resumen">
-		<hr>
-	    Seleccione imagen:
-	    <input type="file" name="fileToUpload" id="fileToUpload">
-	    <input type="submit" value="Agregar producto" name="submit">
-	</form>
-</div-->
-
-<div id="review-form" class="col-md-7">
-	<form class="review-form" method="POST" action="upload.php">
-		<!--input class="input" type="text" name="smartphoneid" style="display: none;" value="<?php echo " ".$row["smartphoneid"]." " ?>"-->
-		<!--input class="input" type="text" name="nombre" placeholder="Nombre">
-		<input class="input" type="text" name="email" placeholder="Email"-->
-
-		<input class="input" type="text" name="nombre" placeholder="Nombre">
-		<input class="input" type="text" name="marca" placeholder="Marca">
-		<input class="input" type="text" name="precio" placeholder="Precio">
-		<input class="input" type="text" name="descuento" placeholder="Descuento">
-		<input class="input" type="text" name="stock" placeholder="Stock">
-		<input class="input" type="text" name="stars" placeholder="Stars">
-		<textarea class="input" type="text" name="descripcion" placeholder="Descripcion"></textarea>
-		<input class="input" type="text" name="resumen" placeholder="Nombre">
-
-		<input class="input" type="file" name="fileToUpload" placeholder="Subir imagen" id="fileToUpload">
-		<button class="primary-btn" type="submit" name="submit" value="Agregar producto">Agregar producto</button>
-		
-		<!--button class="primary-btn" href="detalle.php">Submit</button-->
-	</form>
-</div>
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+				Nombre:
+				<input type="text" name="nombre"><br>
+				Marca:
+				<input type="text" name="marca"><br>
+				Precio:
+				<input type="text" name="precio"><br>
+				Descuento:
+				<input type="text" name="descuento"><br>
+				Stock:
+				<input type="text" name="stock"><br>
+				Stars:
+				<input type="text" name="stars"><br>
+				Descripcion:
+				<input type="text" name="descripcion"><br>
+				Resumen:
+				<input type="text" name="resumen">
+				<hr>
+			    Seleccione imagen:
+			    <input type="file" name="fileToUpload" id="fileToUpload">
+			    <input type="submit" value="Agregar producto" name="submit">
+			</form>
+		</div-->
 		<!-- /SECTION -->
 		<?php include("pie.php");?>
 

@@ -62,7 +62,7 @@
 					<ul class="main-nav nav navbar-nav">
 						<li><a href="index.php">Principal</a></li>
 						<li class="active"><a href="productos.php">Productos</a></li>
-						<li><a href="#">Ventas</a></li>
+						<li><a href="admin.php">Ventas</a></li>
 						<!--li><a href="#">Compras</a></li-->
 					</ul>
 					<!-- /NAV -->
@@ -102,19 +102,7 @@
 					<div class="col-md-5 col-md-push-2">
 						<div id="product-main-img">
 							<div class="product-preview">
-								<img src="./img/product01.png" alt="">
-							</div>
-
-							<div class="product-preview">
-								<img src="./img/product03.png" alt="">
-							</div>
-
-							<div class="product-preview">
-								<img src="./img/product06.png" alt="">
-							</div>
-
-							<div class="product-preview">
-								<img src="./img/product08.png" alt="">
+								<img src='./img/<?php echo "".$row["imagenid"]."" ?>' alt="">
 							</div>
 						</div>
 					</div>
@@ -124,19 +112,7 @@
 					<div class="col-md-2  col-md-pull-5">
 						<div id="product-imgs">
 							<div class="product-preview">
-								<img src="./img/product01.png" alt="">
-							</div>
-
-							<div class="product-preview">
-								<img src="./img/product03.png" alt="">
-							</div>
-
-							<div class="product-preview">
-								<img src="./img/product06.png" alt="">
-							</div>
-
-							<div class="product-preview">
-								<img src="./img/product08.png" alt="">
+								<img src='./img/<?php echo "".$row["imagenid"]."" ?>' alt="">
 							</div>
 						</div>
 					</div>
@@ -145,6 +121,7 @@
 					<!-- Product details -->
 					<div class="col-md-5">
 						<div class="product-details">
+							<form method="POST" action="comprando.php">
 							<h2 class="product-name"><?php echo " ".$row["nombre"]." " ?></h2>
 							<div>
 								<div class="product-rating">
@@ -174,7 +151,8 @@
 								<?php $SmartphoneID =  "".$row["smartphoneid"]."" ?>
 							</p>
 							<div class="add-to-cart">
-								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Comprar </button>
+								<input type="text" name = smartphoneid style="display: none" value="<?php echo " ".$row["smartphoneid"]." " ?>">
+								<button class="add-to-cart-btn" type="submit"><i class="fa fa-shopping-cart"></i> Comprar </button>
 							</div>
 
 							<ul class="product-links">
@@ -191,7 +169,7 @@
 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 								<li><a href="#"><i class="fa fa-envelope"></i></a></li>
 							</ul>
-
+							</form>
 						</div>
 					</div>
 					<!-- /Product details -->
@@ -399,8 +377,9 @@
 												<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
 											</div-->
 										</div>
-										<div class="add-to-cart">
-											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Ver detalles</button>
+										<div class="add-to-cart" href>
+											<input type="text" name = numero style="display: none" value="<?php echo " ".$row["smartphoneid"]." " ?>">
+											<button class="add-to-cart-btn" type="submit"><i class="fa fa-shopping-cart"></i>Ver detalles</button>
 										</div>
 									</form>
 								</div>

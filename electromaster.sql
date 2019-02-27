@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-02-2019 a las 07:03:40
+-- Tiempo de generación: 27-02-2019 a las 10:32:24
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.0
 
@@ -138,8 +138,16 @@ CREATE TABLE `venta` (
   `ciudad` varchar(254) NOT NULL,
   `pais` varchar(254) NOT NULL,
   `codigopostal` int(10) NOT NULL,
-  `telefono` int(14) NOT NULL
+  `telefono` int(14) NOT NULL,
+  `smartphoneid` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `venta`
+--
+
+INSERT INTO `venta` (`ventaid`, `nombre`, `apellido`, `email`, `direccion`, `ciudad`, `pais`, `codigopostal`, `telefono`, `smartphoneid`) VALUES
+(1, 'Rodrigo', 'Uscanga', 'ruscanga@tcdigital.com', 'Calle 25 #352 entre 26 y 28 col. vergel 1', 'Merida', 'Mexico', 97000, 2147483647, 1);
 
 --
 -- Índices para tablas volcadas
