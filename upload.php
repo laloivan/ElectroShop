@@ -37,6 +37,81 @@ $username = "root";
 $password = "";
 $dbname = "electromaster";
 
+if(isset($_POST['nombre']) && (trim($_POST['nombre']) != '') ) {
+	$nombre = $_POST['nombre'];
+}
+else {
+	$nombre = "";
+}
+if(isset($_POST['marca']) && (trim($_POST['marca']) != '') ) {
+	$marca = $_POST['marca'];
+}
+else {
+	$marca = "";
+}
+if(isset($_POST['precio']) && (trim($_POST['precio']) != '') ) {
+	$precio = $_POST['precio'];
+}
+else {
+	$precio = 0;
+}
+
+if(isset($_POST['descuento']) && (trim($_POST['descuento']) != '') ) {
+	$descuento = $_POST['descuento'];
+}
+else {
+	$descuento = 0;
+}
+
+if(isset($_POST['tipopago']) && (trim($_POST['tipopago']) != '') ) {
+	$tipopago = $_POST['tipopago'];
+}
+else {
+	$tipopago = 1;
+}
+
+if(isset($_POST['stock']) && (trim($_POST['stock']) != '') ) {
+	$stock = $_POST['stock'];
+}
+else {
+	$stock = 1;
+}
+
+if(isset($_POST['stars']) && (trim($_POST['stars']) != '') ) {
+	$stars = $_POST['stars'];
+}
+else {
+	$stars = 5;
+}
+
+if(isset($_POST['estado']) && (trim($_POST['estado']) != '') ) {
+	$estado = $_POST['estado'];
+}
+else {
+	$estado = 5;
+}
+
+if(isset($_POST['descripcion']) && (trim($_POST['descripcion']) != '') ) {
+	$descripcion = $_POST['descripcion'];
+}
+else {
+	$descripcion = "";
+}
+
+if(isset($_POST['resumen']) && (trim($_POST['resumen']) != '') ) {
+	$resumen = $_POST['resumen'];
+}
+else {
+	$resumen = "";
+}
+
+if(isset($_POST['caracteristicas']) && (trim($_POST['caracteristicas']) != '') ) {
+	$caracteristicas = $_POST['caracteristicas'];
+}
+else {
+	$caracteristicas = "";
+}
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -45,7 +120,7 @@ if ($conn->connect_error) {
 } 
 
 $sql = "INSERT INTO smartphone (nombre,marca, precio, imagenid, descuento, tipopago, stock, stars, estado, descripcion, resumen, caracteristicas)
-VALUES ('mate', 'huaei', '100','$nombreimagen','10','1','1','1','1','descripcion','resumen','caracteristicas')";
+VALUES ('$nombre', '$marca', '$precio','$nombreimagen','$descuento','$tipopago','$stock','$stars','$estado','$descripcion','$resumen','$caracteristicas')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
