@@ -60,7 +60,7 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li><a href="">Principal</a></li>
+						<li><a href="index.php">Principal</a></li>
 						<li class="active"><a href="productos.php">Productos</a></li>
 						<li><a href="#">Ventas</a></li>
 						<!--li><a href="#">Compras</a></li-->
@@ -302,7 +302,7 @@
 															<input id="star1" name="rating" value="1" type="radio"><label for="star1"></label>
 														</div>
 													</div>
-													<button class="primary-btn" href="detalle.php">Submit</button>
+													<button class="primary-btn" href="detalle.php">Agregar</button>
 												</form>
 											</div>
 										</div>

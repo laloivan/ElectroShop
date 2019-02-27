@@ -105,7 +105,7 @@
 			<!-- container -->
 
 
-<div style="width:30%; margin: 0 auto">
+<!--div style="width:30%; margin: 0 auto">
 
 	<form action="upload.php" method="post" enctype="multipart/form-data">
 		Nombre:
@@ -125,11 +125,32 @@
 		Resumen:
 		<input type="text" name="resumen">
 		<hr>
-    Seleccione imagen:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Agregar producto" name="submit">
-</form>
+	    Seleccione imagen:
+	    <input type="file" name="fileToUpload" id="fileToUpload">
+	    <input type="submit" value="Agregar producto" name="submit">
+	</form>
+</div-->
 
+<div id="review-form" class="col-md-7">
+	<form class="review-form" method="POST" action="upload.php">
+		<!--input class="input" type="text" name="smartphoneid" style="display: none;" value="<?php echo " ".$row["smartphoneid"]." " ?>"-->
+		<!--input class="input" type="text" name="nombre" placeholder="Nombre">
+		<input class="input" type="text" name="email" placeholder="Email"-->
+
+		<input class="input" type="text" name="nombre" placeholder="Nombre">
+		<input class="input" type="text" name="marca" placeholder="Marca">
+		<input class="input" type="text" name="precio" placeholder="Precio">
+		<input class="input" type="text" name="descuento" placeholder="Descuento">
+		<input class="input" type="text" name="stock" placeholder="Stock">
+		<input class="input" type="text" name="stars" placeholder="Stars">
+		<textarea class="input" type="text" name="descripcion" placeholder="Descripcion"></textarea>
+		<input class="input" type="text" name="resumen" placeholder="Nombre">
+
+		<input class="input" type="file" name="fileToUpload" placeholder="Subir imagen" id="fileToUpload">
+		<button class="primary-btn" type="submit" name="submit" value="Agregar producto">Agregar producto</button>
+		
+		<!--button class="primary-btn" href="detalle.php">Submit</button-->
+	</form>
 </div>
 		<!-- /SECTION -->
 		<?php include("pie.php");?>
