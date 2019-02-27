@@ -7,8 +7,8 @@
 					<div class="col-md-12">
 						<div class="newsletter">
 							<p> Recibir información de <strong>PRODUCTOS</strong></p>
-							<form>
-								<input class="input" type="email" placeholder="ingrese su e-mail">
+							<form method="POST" action="suscribirse.php">
+								<input class="input" type="email" name = suscribirse placeholder="ingrese su e-mail">
 								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Suscribirse </button>
 							</form>
 							<ul class="newsletter-follow">
@@ -46,7 +46,7 @@
 							<div class="footer">
 								<h3 class="footer-title"> Acerda de </h3>
 								<p>
-									TCDigital es Distribuidor Mayorista de teléfonos celulares y accesorios para celulares. Contamos con varios años de experiencia en el mercado. Nuestra compañía está integrada por profesionales en sistemas, telecomunicaciones y de soporte técnico, con más de 5000 clientes satisfechos en todo México.
+									TCDigital es distribuidor mayorista de teléfonos celulares. Contamos con varios años de experiencia en el mercado. Nuestra compañía está integrada por profesionales en sistemas, telecomunicaciones y de soporte técnico, con más de 5000 clientes satisfechos en todo México.
 								</p>
 							</div>
 						</div>

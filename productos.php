@@ -80,6 +80,7 @@
 									{?>
 										<div class="col-md-4 col-xs-6">
 											<div class="product">
+												<form method="POST" action="detalle.php">
 												<div class="product-img">
 													<img src='./img/<?php echo "".$row["imagenid"]."" ?>' alt="">
 													<div class="product-label">
@@ -91,20 +92,25 @@
 													<h3 class="product-name"><a href="#"><?php echo " ".$row["nombre"]." " ?></a></h3>
 													<h4 class="product-price"> $<?php echo " ".$row["descuento"]." " ?> <del class="product-old-price"> $<?php echo " ".$row["precio"]." " ?> </del></h4>
 													<div class="product-rating">
-														<i class="fa fa-star"></i><i class="fa fa-star"></i>
-														<i class="fa fa-star"></i>
-														<i class="fa fa-star"></i>
-														<i class="fa fa-star-o"></i>
-													</div>
-													<div class="product-btns">
-														<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-														<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-														<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
+														<?php
+														for ($y = 0; $y < $row["stars"]; $y++)
+															{?>
+																<i class="fa fa-star"></i>
+																<?php
+															}
+															$starsBlancasY = 5 - $y;
+														for ($l=0; $l < $starsBlancasY; $l++)
+															{ ?>
+																<i class="fa fa-star-o"></i>
+																<?php
+															}?>
 													</div>
 												</div>
 												<div class="add-to-cart">
-													<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
+													<input type="text" name = numero style="display: none" value="<?php echo " ".$row["smartphoneid"]." " ?>">
+													<button class="add-to-cart-btn" type="submit"><i class="fa fa-shopping-cart"></i>Ver detalle</button>
 												</div>
+												</form>
 											</div>
 											<div class="clearfix visible-lg visible-md"></div>
 										</div>
@@ -121,7 +127,7 @@
 							</div>
 							<!-- /store products -->
 							<!-- store bottom filter -->
-							<div class="store-filter clearfix">
+							<!--div class="store-filter clearfix">
 								<span class="store-qty">Showing 20-100 products</span>
 								<ul class="store-pagination">
 									<li class="active">1</li>
@@ -130,7 +136,7 @@
 									<li><a href="#">4</a></li>
 									<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
 								</ul>
-							</div>
+							</div-->
 							<!-- /store bottom filter -->
 						</div>
 						<!-- /STORE -->

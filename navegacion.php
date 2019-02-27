@@ -78,59 +78,6 @@ $db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_
         <!-- ACCOUNT -->
         <div class="col-md-3 clearfix">
           <div class="header-ctn">
-            <!-- Wishlist -->
-            <div>
-              <a href="#">
-                <i class="fa fa-heart-o"></i>
-                <span>Favoritos</span>
-                <div class="qty">7</div>
-              </a>
-            </div>
-            <!-- /Wishlist -->
-
-            <!-- Cart -->
-            <div class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                <i class="fa fa-shopping-cart"></i>
-                <span>Carrito</span>
-                <div class="qty">1</div>
-              </a>
-              <div class="cart-dropdown">
-                <div class="cart-list">
-                  <div class="product-widget">
-                    <div class="product-img">
-                      <img src="./img/product01.png" alt="">
-                    </div>
-                    <div class="product-body">
-                      <h3 class="product-name"><a href="#">Telcel Apple iPhone XR 64G Negro</a></h3>
-                      <h4 class="product-price"><span class="qty">1x</span>$20,729</h4>
-                    </div>
-                    <button class="delete"><i class="fa fa-close"></i></button>
-                  </div>
-
-                  <div class="product-widget">
-                    <div class="product-img">
-                      <img src="./img/product02.png" alt="">
-                    </div>
-                    <div class="product-body">
-                      <h3 class="product-name"><a href="#">Telcel Samsung Galaxy A9 Azul</a></h3>
-                      <h4 class="product-price"><span class="qty">2x</span>$12,999</h4>
-                    </div>
-                    <button class="delete"><i class="fa fa-close"></i></button>
-                  </div>
-                </div>
-                <div class="cart-summary">
-                  <small>3 artículo(s) seleccionados</small>
-                  <h5>SUBTOTAL: $33728.00</h5>
-                </div>
-                <div class="cart-btns">
-                  <a href="#">Ver carrito</a>
-                  <a href="#">Confirmar<i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div>
-            </div>
-            <!-- /Cart -->
-
             <!-- Menu Toogle -->
             <div class="menu-toggle">
               <a href="#">

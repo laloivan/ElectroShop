@@ -119,12 +119,12 @@
 						<div class="section-title">
 							<h3 class="title">Productos a credito</h3>
 							<div class="section-nav">
-								<ul class="section-tab-nav tab-nav">
+								<!--ul class="section-tab-nav tab-nav">
 									<li class="active"><a data-toggle="tab" href="#tab1">Apple</a></li>
 									<li><a data-toggle="tab" href="#tab1">Samsung</a></li>
 									<li><a data-toggle="tab" href="#tab1">Motorola</a></li>
 									<li><a data-toggle="tab" href="#tab1">Huawei</a></li>
-								</ul>
+								</ul-->
 							</div>
 						</div>
 					</div>
@@ -238,32 +238,32 @@
 							<ul class="hot-deal-countdown">
 								<li>
 									<div>
-										<h3>02</h3>
-										<span>Days</span>
+										<h3>10</h3>
+										<span>Calidad</span>
 									</div>
 								</li>
 								<li>
 									<div>
 										<h3>10</h3>
-										<span>Hours</span>
+										<span>Atención</span>
 									</div>
 								</li>
 								<li>
 									<div>
-										<h3>34</h3>
-										<span>Mins</span>
+										<h3>10</h3>
+										<span>Confianza</span>
 									</div>
 								</li>
 								<li>
 									<div>
-										<h3>60</h3>
-										<span>Secs</span>
+										<h3>10</h3>
+										<span>Recomendar</span>
 									</div>
 								</li>
 							</ul>
-							<h2 class="text-uppercase">hot deal this week</h2>
-							<p>New Collection Up to 50% OFF</p>
-							<a class="primary-btn cta-btn" href="#">Shop now</a>
+							<h2 class="text-uppercase">Distribuidor mayorista</h2>
+							<p>Años de experiencia en el mercado</p>
+							<a class="primary-btn cta-btn" href="productos.php">Comprar</a>
 						</div>
 					</div>
 				</div>
@@ -284,12 +284,12 @@
 						<div class="section-title">
 							<h3 class="title">Productos a contado</h3>
 							<div class="section-nav">
-								<ul class="section-tab-nav tab-nav">
+								<!--ul class="section-tab-nav tab-nav">
 									<li class="active"><a data-toggle="tab" href="#tab1">Apple</a></li>
 									<li><a data-toggle="tab" href="#tab1">Samsung</a></li>
 									<li><a data-toggle="tab" href="#tab1">Motorola</a></li>
 									<li><a data-toggle="tab" href="#tab1">Huawei</a></li>
-								</ul>
+								</ul-->
 							</div>
 						</div>
 					</div>
@@ -357,12 +357,6 @@
 																		<?php
 																	}?>
 															</div>
-															<!-- Comentado porque no se utiliza -->
-															<!--div class="product-btns">
-																<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Favoritos</span></button>
-																<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">Comparar</span></button>
-																<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Vista rápida</span></button>
-															</div-->
 														</div>
 														<div class="add-to-cart" href="detalle.php">
 															<input type="text" name = numero style="display: none" value="<?php echo " ".$row["smartphoneid"]." " ?>">
@@ -390,10 +384,8 @@
 		<!-- /SECTION -->
 
 		<!-- SECTION -->
-		<div class="section">
-			<!-- container -->
+		<!--div class="section">
 			<div class="container">
-				<!-- row -->
 				<div class="row">
 					<div class="col-md-4 col-xs-6">
 						<div class="section-title">
@@ -405,7 +397,6 @@
 
 						<div class="products-widget-slick" data-nav="#slick-nav-3">
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product07.png" alt="">
@@ -416,9 +407,6 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
-
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product08.png" alt="">
@@ -429,9 +417,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product09.png" alt="">
@@ -442,11 +428,9 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product01.png" alt="">
@@ -457,9 +441,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product02.png" alt="">
@@ -470,9 +452,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product03.png" alt="">
@@ -483,7 +463,6 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 						</div>
 					</div>
@@ -498,7 +477,6 @@
 
 						<div class="products-widget-slick" data-nav="#slick-nav-4">
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product04.png" alt="">
@@ -509,9 +487,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product05.png" alt="">
@@ -522,9 +498,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product06.png" alt="">
@@ -535,11 +509,9 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product07.png" alt="">
@@ -550,9 +522,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product08.png" alt="">
@@ -563,9 +533,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product09.png" alt="">
@@ -576,7 +544,6 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 						</div>
 					</div>
@@ -593,7 +560,6 @@
 
 						<div class="products-widget-slick" data-nav="#slick-nav-5">
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product01.png" alt="">
@@ -604,9 +570,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product02.png" alt="">
@@ -617,9 +581,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product03.png" alt="">
@@ -630,11 +592,10 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
+
 							</div>
 
 							<div>
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product04.png" alt="">
@@ -645,9 +606,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product05.png" alt="">
@@ -658,9 +617,7 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- /product widget -->
 
-								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
 										<img src="./img/product06.png" alt="">
@@ -671,16 +628,12 @@
 										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
 									</div>
 								</div>
-								<!-- product widget -->
 							</div>
 						</div>
 					</div>
-
 				</div>
-				<!-- /row -->
 			</div>
-			<!-- /container -->
-		</div>
+		</div-->
 		<!-- /SECTION -->
 
 		<!-- Se incluye el pie de página. -->
