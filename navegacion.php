@@ -9,6 +9,7 @@
       location.replace("http://127.0.0.1/xdxd/ElectroShop/index.php?cat="+categoria+ "&val="+valor)
     }
 </script>
+
   <!-- TOP HEADER -->
   <div id="top-header">
     <div class="container">
@@ -60,7 +61,7 @@ $db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_
   ?>
 
         <!-- SEARCH BAR -->
-        <div class="col-md-6">
+        <!--div class="col-md-6">
           <div class="header-search">
             <form>
               <select id="cat" class="input-select" type="text">
@@ -72,7 +73,7 @@ $db_connection = mysqli_connect($db_servername, $db_username, $db_password, $db_
               <button class="search-btn" OnClick="buscar()" >Buscar</button>
             </form>
           </div>
-        </div>
+        </div-->
         <!-- /SEARCH BAR -->
 
         <!-- ACCOUNT -->
