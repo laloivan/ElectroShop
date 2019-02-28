@@ -40,7 +40,7 @@
 			var pass =  document.getElementById('pass').value
 			if(pass = '1234567')
 			{
-				location.replace("http://localhost/electro-master/")
+				location.replace("http://localhost/electroshop/agregarproducto.php")
 			}
 			else
 			{
