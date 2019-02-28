@@ -34,6 +34,20 @@
  		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
  		<![endif]-->
  		<script type="text/javascript">
+
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("POST", "upload.php", true);
+  xhttp.send();
+}
+
+
 		function login()
 		{
 			//var usuario = document.getElementById('textbox_id').value;
@@ -98,7 +112,7 @@
 						<div class="section-title">
 							<h3 class="title">Datos de producto</h3>
 						</div>
-						<form class="review-form" method="POST" action="upload.php" style="text-align: center;">
+						<form class="review-form" method="POST" action="upload.php" enctype="multipart/form-data" style="text-align: center;">
 							<input class="input" type="text" name="nombre" placeholder="Nombre">
 							<input class="input" type="text" name="marca" placeholder="Marca">
 							<input class="input" type="text" name="precio" placeholder="Precio">
@@ -106,7 +120,6 @@
 							<input class="input" type="text" name="stock" placeholder="Stock">
 							<input class="input" type="text" name="stars" placeholder="Stars">
 							<textarea class="input" type="text" name="descripcion" placeholder="Descripcion"></textarea>
-							<input class="input" type="text" name="resumen" placeholder="Nombre">
 							<input class="input" type="file" name="fileToUpload" placeholder="Subir imagen" id="fileToUpload">
 							<button class="primary-btn" type="submit" name="submit" value="Agregar producto">Agregar producto</button>
 						</form>

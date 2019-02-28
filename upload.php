@@ -117,13 +117,14 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 
 $sql = "INSERT INTO smartphone (nombre,marca, precio, imagenid, descuento, tipopago, stock, stars, estado, descripcion, resumen, caracteristicas)
 VALUES ('$nombre', '$marca', '$precio','$nombreimagen','$descuento','$tipopago','$stock','$stars','$estado','$descripcion','$resumen','$caracteristicas')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
+    echo "<script>location.href='agregarProducto.php';</script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
