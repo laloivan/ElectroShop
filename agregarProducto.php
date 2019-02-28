@@ -34,6 +34,20 @@
  		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
  		<![endif]-->
  		<script type="text/javascript">
+
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("POST", "upload.php", true);
+  xhttp.send();
+}
+
+
 		function login()
 		{
 			//var usuario = document.getElementById('textbox_id').value;
