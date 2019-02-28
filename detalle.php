@@ -220,11 +220,11 @@
 												<ul class="reviews">
 													<?php
 													//Creando consultas
-													$sql_productoReview =  "SELECT * FROM review where smartphoneid = ".$smartphone." ORDER BY ReviewID DESC LIMIT 3";
+													$sql_productoReview =  "SELECT * FROM review where smartphoneid = ".$SmartphoneID." ORDER BY ReviewID DESC LIMIT 3";
 													//echo "$sql_productoReview";
 													$dataProductoReviewData=$db_connection->query($sql_productoReview);
 													$limite = $dataProductoReviewData->num_rows;
-													$row = $dataProductoReviewData->fetch_assoc();
+													//$row = $dataProductoReviewData->fetch_assoc();
 													while($row = $dataProductoReviewData->fetch_assoc())
 													{
 														?>
@@ -266,7 +266,7 @@
 											<div id="review-form">
 												<form class="review-form" method="POST" action="review.php">
 													<!-- style="display: none;" -->
-													<input class="input" type="text" name="smartphoneid" style="display: none;" value="<?php echo " ".$row["smartphoneid"]." " ?>">
+													<input class="input" type="text" name="smartphoneid" style="display: none;" value="<?php echo " ".$SmartphoneID." " ?>">
 													<input class="input" type="text" name="nombre" placeholder="Nombre">
 													<input class="input" type="text" name="email" placeholder="Email">
 													<textarea class="input" type="text" name="opinion" placeholder="Opinión"></textarea>
